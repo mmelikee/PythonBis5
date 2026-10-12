@@ -1,0 +1,11 @@
+
+[tool.poetry]
+name = "sealed-laboratory"
+version = "1.0.0"
+description = "Dependency management exercise"
+authors = ["Student"]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pandas = ">=2.1.0"
+numpy = ">=1.25.0"
