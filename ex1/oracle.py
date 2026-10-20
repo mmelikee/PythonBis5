@@ -62,8 +62,10 @@ print("Configuration security check:")
 print("[OK] No hardcoded secrets detected")
 print(
     f"[{'OK' if ignored_env else 'WARNING'}] "
-    f".env file {'properly ignored by git' if ignored_env else 'not ignored by git'}"
 )
+status = "properly ignored" if ignored_env else "not ignored"
+print(f".env file {status} by git")
+
 print("[OK] Production overrides available")
 print()
 print("The Oracle sees all configurations.")
